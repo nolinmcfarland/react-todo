@@ -3,5 +3,5 @@ function Todo({todo, index, removeTodo}) {
         removeTodo(index);
     };
     
-    return <div className="todo" onClick={handleRemove}>{todo.title} (-)</div>
+    return <div className="todo" onClick={handleRemove}>{todo.title} ❌</div>
 }

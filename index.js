@@ -26,9 +26,15 @@ function App() {
     };
 
     return (<>
-        {todos.map((todo, index) => <Todo index={index} key={index} todo={todo} removeTodo={removeTodo} />)}
-        <TodoForm addTodo={addTodo} />
-    </>);
+        <div className="app">
+            <h1 id="app-title">Todos</h1>
+            <div className="todo-list">
+                {todos.map((todo, index) => <Todo index={index} key={index} todo={todo} removeTodo={removeTodo} />)}
+                <TodoForm addTodo={addTodo} />
+            </div>
+        </div>
+    </>
+    );
 }
 
 ReactDOM.render(
