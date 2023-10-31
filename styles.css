@@ -37,6 +37,10 @@ code {
     justify-content: space-between;
 }
 
+.todo:hover {
+    color: #ee0000;
+}
+
 .input {
     color: #fff;
     background: #303030;
